@@ -1,0 +1,30 @@
+"<style> .grid-container {   display: grid;   grid-template-columns: ", auto, "  } </style> <div class=\"grid-container\" ", squares, " </div>"
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "frm1"></p>
+
+<form id = "lname">
+  Firstname =  <input type="text" name="fname"><br>
+  Last name: <input type="text"  name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+<script>
+function myFunction(){
+  var x = document.getElementById("fname");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("frm1").innerHTML = text;
+}
+
+</script>
+
+</body>
+</html>

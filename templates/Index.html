@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            body {background-color:#F0F8FF}
+            ul {list-style-type: none; margin:0; padding: 0;background-color:black;border-radius:20px}
+            li {float: left;background-color:black;border-top-left-radius:20px;border-bottom-left-radius:20px}
+            a {display: block;padding: 10px 40px;color:white;font-family: "verdana", verdana, sans-serif;text-decoration-line:none;}
+            span {display: block;padding: 10px 40px;background-color: black;color:white;font-family: "verdana", verdana, sans-serif;text-decoration-line:none;}
+            .dropdown {position: relative;display: inline-block;}
+            .dropdown-content {display: none;position: absolute;background-color:black;padding: 0px 0px;border-bottom-left-radius:20px;border-bottom-right-radius:20px;}
+            .dropdown:hover .dropdown-content {display: block;}
+            .smooth {border-bottom-left-radius:20px;border-bottom-right-radius:20px;}
+        </style>
+    </head>
+    <body>
+        <ul>
+          <li><a href="default.asp">Maze Maker</a></li>
+          <li><a href="/maze">third</a></li>
+          <div class="dropdown">
+            <span>Account</span>
+            <div class="dropdown-content">
+                <li><a href=/tests>tests</a></li>
+                <li><a href=/login>Login</a></li>
+                <li><a href=/signup>Signup</a></li>
+                <li class="smooth"><a href=/logout>Logout</a></li>
+            </div>
+        </div>
+        </ul>
+    </body>
+</html>

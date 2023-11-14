@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "frm1">gyjtj</p>
+
+<form id = "lname">
+  Firstname  <input type="number" name="fname" value="2"><br>
+</form>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction(){
+  var x = document.getElementById("lname");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("frm1").innerHTML = text;
+}
+
+</script>
+
+</body>
+</html>
